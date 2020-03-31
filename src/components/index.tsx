@@ -1,4 +1,5 @@
 import MyComponent from './MyComponent/MyComponent.container';
-// import AnotherComponent from './AnotherComponent/AnotherComponent.component.js';
-//, AnotherComponent
-export { MyComponent };
+import StyledBox from './ToDos/ToDos.container';
+
+
+export { MyComponent, StyledBox };

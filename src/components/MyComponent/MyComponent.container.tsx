@@ -1,7 +1,7 @@
 import React, { Component } from 'react' 
 // I try to tree-shake where I can, this will help our apps be lighter. If not, by just accessing React.Component, we import every
 // item associated to the React Object
-import ChildComponent from './MyComponent.component' 
+import ChildComponent from './component.StyledContainer' 
 // this is one of the only times I use relative paths to import component. More of this later.
 
 

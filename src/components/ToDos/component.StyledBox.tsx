@@ -1,13 +1,13 @@
 
 import React from 'react';
-import { StyledContainer } from './MyComponent.styles';
+import { StyledContainer } from './ToDos.styles';
 // As a child component it receives props as an argument. Here we are just destructuring it.
 
-const MyComponent = ({ weCool }: any) => (
+const StyledBox = ({ weCool }: any) => (
   <StyledContainer>
-    Hello welcome to the child component. 
+    STYLED BOX COMPONENT
     Are we cool? {weCool && 'You bet'}
   </StyledContainer>
 );
 
-export default MyComponent;
+export default StyledBox;

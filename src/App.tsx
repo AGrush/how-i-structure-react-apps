@@ -35,20 +35,20 @@
 // you wont be able to access those routes
 
 import React, { Fragment } from 'react'
-import { MyComponent } from './components/index' // more about this later..
+import { MyComponent, StyledBox } from './components/index'
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { GlobalStyle } from './utils/styles/global';
 import store from "./store";
 
-const App = () => (
+const App: React.FC = () => (
   <Provider store={store}> 
       <Fragment>
           <GlobalStyle />
           <Router>
               <Switch> 
-                  <Route path="/" component={MyComponent} />
                   <Route exact path="/" component={MyComponent} />
+                  <Route exact path="/styledbox" component={StyledBox} />
               </Switch>
           </Router>
       </Fragment>
