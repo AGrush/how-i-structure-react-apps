@@ -1,5 +1,6 @@
 import MyComponent from './MyComponent/MyComponent.container';
-import StyledBox from './ToDos/ToDos.container';
+import ToDosClassState from './ToDos/ToDosClassState.container';
+import ToDosFunctionalState from './ToDos/ToDosFunctionalState.container';
 
 
-export { MyComponent, StyledBox };
+export { MyComponent, ToDosClassState, ToDosFunctionalState };

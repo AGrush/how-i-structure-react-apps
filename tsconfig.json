@@ -20,6 +20,6 @@
     "jsx": "react"
   },
   "include": [
-    "src"
+    "src", "component.NewTodo.tsx", "ToDosClassState.container.tsx"
   ]
 }

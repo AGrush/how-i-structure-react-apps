@@ -35,7 +35,7 @@
 // you wont be able to access those routes
 
 import React, { Fragment } from 'react'
-import { MyComponent, StyledBox } from './components/index'
+import { MyComponent, ToDosClassState, ToDosFunctionalState } from './components/index'
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { GlobalStyle } from './utils/styles/global';
@@ -48,7 +48,8 @@ const App: React.FC = () => (
           <Router>
               <Switch> 
                   <Route exact path="/" component={MyComponent} />
-                  <Route exact path="/styledbox" component={StyledBox} />
+                  <Route exact path="/todosClass" component={ToDosClassState} />
+                  <Route exact path="/todosFunc" component={ToDosFunctionalState} />
               </Switch>
           </Router>
       </Fragment>
