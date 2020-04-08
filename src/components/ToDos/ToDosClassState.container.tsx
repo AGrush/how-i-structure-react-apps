@@ -30,7 +30,14 @@ class StyledBox extends Component<any, any> {
   }
 
   onDeleteTodo = (id: string) => {
-    this.setState(this.state.todos.filter(todo => (todo.id !== id)))
+    const { todos } = this.state;
+    let tempArr = [...todos];
+    let newArray = tempArr.filter(x => {
+      return x.id !== id;
+    });
+    this.setState({
+      todos: newArray
+    })
   }
 
   render() {

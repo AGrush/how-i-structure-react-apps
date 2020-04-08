@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 
 interface MyProps {
   onAddTodo: (todoText: string) => void;
-
 }
 
 const NewTodoFunctional: React.FC<MyProps> = ({ onAddTodo }) => {

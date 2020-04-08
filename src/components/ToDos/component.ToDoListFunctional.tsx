@@ -15,7 +15,6 @@ const ToDoListFunctional: React.FC<TodoListProps> = props => (
         <span>{todo.text}</span>
         <button onClick={props.onDeleteTodo.bind(null, todo.id)}>DELETE</button>
       </li>
-      
     ))}
   </StyledUl>
 );

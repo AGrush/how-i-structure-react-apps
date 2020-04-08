@@ -13,7 +13,7 @@ const StyledContainer = styled.div`
 const StyledUl = styled.ul`
   width: 60%;
   padding: 20px;
-  background-color: yellow;
+  background-color: orange;
 `;
 
 export { StyledContainer, StyledUl};
